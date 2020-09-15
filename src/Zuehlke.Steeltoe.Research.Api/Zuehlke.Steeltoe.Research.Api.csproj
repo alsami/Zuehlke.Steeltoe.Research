@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Consul" Version="1.6.1.1" />
+    <PackageReference Include="MongoDB.Driver" Version="2.11.2" />
+    <PackageReference Include="Steeltoe.Common.Hosting" Version="3.0.0" />
+    <PackageReference Include="Steeltoe.Discovery.ClientCore" Version="3.0.0" />
+    <PackageReference Include="Steeltoe.Discovery.Consul" Version="3.0.0" />
+    <PackageReference Include="Steeltoe.Extensions.Logging.DynamicSerilogCore" Version="3.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="3.1.8" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.2.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="publish\zsra-one\web.config" />
+    <_ContentIncludedByDefault Remove="publish\zsra-two\publish\zsra-one\web.config" />
+    <_ContentIncludedByDefault Remove="publish\zsra-two\web.config" />
+    <_ContentIncludedByDefault Remove="publish\zsra-one\appsettings.json" />
+    <_ContentIncludedByDefault Remove="publish\zsra-one\Zuehlke.Steeltoe.Research.Api.deps.json" />
+    <_ContentIncludedByDefault Remove="publish\zsra-one\Zuehlke.Steeltoe.Research.Api.runtimeconfig.json" />
+    <_ContentIncludedByDefault Remove="publish\zsra-two\appsettings.json" />
+    <_ContentIncludedByDefault Remove="publish\zsra-two\publish\zsra-one\appsettings.json" />
+    <_ContentIncludedByDefault Remove="publish\zsra-two\publish\zsra-one\Zuehlke.Steeltoe.Research.Api.deps.json" />
+    <_ContentIncludedByDefault Remove="publish\zsra-two\publish\zsra-one\Zuehlke.Steeltoe.Research.Api.runtimeconfig.json" />
+    <_ContentIncludedByDefault Remove="publish\zsra-two\Zuehlke.Steeltoe.Research.Api.deps.json" />
+    <_ContentIncludedByDefault Remove="publish\zsra-two\Zuehlke.Steeltoe.Research.Api.runtimeconfig.json" />
+  </ItemGroup>
+</Project>
